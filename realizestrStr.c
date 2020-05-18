@@ -2,8 +2,10 @@
 #include <stdint.h> 
 
 int strStr(char * haystack, char * needle){
-if(*haystack==0) return -1;       //如果haystack是空字符串，返回-1 
-if(*needle==0)    return 0;        //如果needle是空字符，返回0
+
+ if(*needle==0)    return 0;        //如果needle是空字符，返回0
+ if(*haystack==0) return -1;       //如果haystack是空字符串，返回-1 
+
  
 char *head=haystack;               //定义haystack的头指针
 int offset;                        //定义一个整形变量offset
