@@ -1,5 +1,4 @@
-#include  <realizestrStr.h>
-#include <stdint.h> 
+#include <stdio.h> 
 
 int strStr(char * haystack, char * needle){
 
@@ -20,4 +19,10 @@ while(*haystack) {                  //当haystack里的某个元素不为空字�
        haystack++;                   //haystack+1
 }
 return -1;                          //当haystack=0时，返回-1
+}
+int main(){
+	char haystack[100] = "aaaaa";
+        char needle[100] = "bba";
+	printf("%d\n",strStr(haystack, needle));
+	return 0;
 }
