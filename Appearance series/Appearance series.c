@@ -38,7 +38,7 @@ int main(){
 
         char temp[5000] = "1";
 
-	printf("%d\n",strStr(mark, temp));
+	printf("%d\n",countAndSay(mark, temp));
 
 	return 0;
 
